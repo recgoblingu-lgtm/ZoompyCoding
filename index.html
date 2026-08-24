@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zoompy - Learn Coding Fast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>⚡ Zoompy</h1>
+    <p>Learn Every Programming Language — Fast</p>
+</header>
+
+<nav>
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('courses')">Courses</button>
+</nav>
+
+<main>
+
+<section id="home" class="active">
+    <h2>Welcome to Zoompy</h2>
+    <p>Master coding concepts and explore 40+ programming languages.</p>
+</section>
+
+<section id="courses">
+    <h2>Courses</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Python</h3>
+            <button onclick="openCourse('Python')">Start</button>
+        </div>
+
+        <div class="card">
+            <h3>JavaScript</h3>
+            <button onclick="openCourse('JavaScript')">Start</button>
+        </div>
+
+        <div class="card">
+            <h3>C++</h3>
+            <button onclick="openCourse('C++')">Start</button>
+        </div>
+
+        <div class="card">
+            <h3>Java</h3>
+            <button onclick="openCourse('Java')">Start</button>
+        </div>
+
+    </div>
+</section>
+
+<section id="lesson">
+    <h2 id="lessonTitle"></h2>
+    <pre id="lessonContent"></pre>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
